@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.fadeIn-enter {
+  opacity: 0;
+}
+.fadeIn-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+.fadeIn-enter-done {
+  opacity: 1;
+}
+.fadeIn-exit {
+  opacity: 1;
+}
+.fadeIn-exit-active {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+.fadeIn-exit-done {
+  opacity: 1;
+}
