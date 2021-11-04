@@ -17,9 +17,9 @@ class ListItem extends Component {
   handleClick() {
     this.props.deleteListItem(this.props.idx);
   }
-  componentWillUpdate(nextProps) {
-    return nextProps.content !== this.props.content;
-  }
+  // shouldComponentUpdate(nextProps) {
+  //   return nextProps.content !== this.props.content;
+  // }
   render() {
     return <li onClick={this.handleClick}>{this.props.content}</li>;
   }
