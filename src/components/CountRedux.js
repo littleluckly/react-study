@@ -1,12 +1,13 @@
 import React, { Component } from "react";
-import store from "../store";
+import store from "../store/redux";
 import {
   increment_action,
   increment_action_async,
-} from "../store/count_action";
+} from "../store/redux/count_action";
 
 export default class CountRedux extends Component {
   componentDidMount() {
+    // 监听redux中的数据变化
     store.subscribe(() => {
       this.setState({});
     });

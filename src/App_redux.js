@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import CountReactRedux from "./containers/count";
-import store from "./store/redux";
+import CountRedux from "./components/CountRedux";
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        <CountReactRedux store={store} />
+        <CountRedux />
       </div>
     );
   }
